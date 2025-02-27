@@ -1,3 +1,19 @@
+{-
+ - Example: "class that glues everything"
+ -}
+class Gluable a where
+  glue :: a -> a -> a
+
+instance Gluable Int where
+  glue a b = a + b
+
+instance Gluable [a] where
+  glue = (++)
+
+gluableDemo :: (Int, String)
+gluableDemo = (glue 1 5, glue "hello" "world")
+
+gluableDemoInfix = "hello" `glue` "world" --this sometimes reads better
 
 {-
  - Finite field over integers modulo 7
@@ -19,7 +35,7 @@ instance Num I7 where
 i7lift f (I7 a) = I7 (f a `mod` 7)
 
 i7lift2 f (I7 a) (I7 b) = I7 (f a b `mod` 7)
- 
+
 int7demo = I7 6 + I7 2 -- this overflows 7 and becomes 1
 
 int7demo2 :: I7
