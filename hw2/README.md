@@ -30,13 +30,14 @@ Formally, the program contains:
   and numbers:
   - parentheses (`(` and `)`),
   - numbers formatted as integers (`123`) or decimals (`12.34`)
-  - variables that refer to function parameters (`a`, `bcd`, ...)
+  - variables that refer to function parameters (`a`, `bcd`, `vArIaBlE`, ...)
   - infix operators with assigned priorities as follows (from highest to lowest
     priority):
     - unary `-` (E.g., `-5`. Since the priority is high, `-5-5` should evaluate
       as `(-5)-5), i.e., `-10` instead of `0`.)
     - multiplication and division with ` * ` and ` / `
     - addition and subtraction with ` + ` and ` - `
+
     You can choose any direction of associativity of the operators; in
     particular it does not matter to the assignment if `1+2-3` parses as
     `(1+2)-3` or `1+(2-3)`; but it should parse consistently in the chosen way.
