@@ -5,7 +5,7 @@ made a tiny language that can process simple mathematical expressions such as
 `(1+2)*3`. The task of assignment 2 is to extend this language with several new
 constructions, and implement several algorithms that work with the code.
 
-Briefly, we are going to process a small minilanguage where people can define
+Briefly, we are going to process a small mini-language where people can define
 named functions with parameters, all of which compute some kind of mathematical
 expression.
 
@@ -84,7 +84,7 @@ f(x, y) = a * b + a / b;
 
 To simplify testing, you may use [`getArgs :: IO
 [String]`](https://hackage.haskell.org/package/base-4.21.0.0/docs/System-Environment.html#v:getArgs)
-to read a filename that was passed to the program via a commandline argument,
+to read a filename that was passed to the program via a command line argument,
 and read the input from the given file.
 
 Your solution must define a suitable datatype or (or at least type aliases) for
@@ -205,7 +205,7 @@ Note that there is specific functionality in `megaparsec` to support this:
 ## Task 3: Evaluate the functions
 
 Write a program `evaluate_function` that additionally gets the following
-commandline arguments (accessible via [`getArgs :: IO
+command line arguments (accessible via [`getArgs :: IO
 [String]`](https://hackage.haskell.org/package/base-4.21.0.0/docs/System-Environment.html#v:getArgs)):
 
 - path to a file with function definitions (e.g., `documents/MyFunctions.txt`)
