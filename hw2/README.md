@@ -50,8 +50,9 @@ Formally, the program contains:
       to pass in a function via argument or return it. In particular, `a(x) =
       x+1; f(a) = a(a);` is valid code because the function name `a` and
       variable name `a` are referring to something differrent.
-    - several simple functions are "built in", these include `sqrt`, `abs`,
-      `sin`, `cos` and `tan`.
+
+    Several simple functions are "built in", these include `sqrt`, `abs`,
+    `sin`, `cos` and `tan`.
 
 ## Task 1: Parse and format
 
