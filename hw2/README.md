@@ -3,11 +3,12 @@
 Let's make a small language that would help us with math. On the practicals, we
 made a tiny language that can process simple mathematical expressions such as
 `(1+2)*3`. The task of assignment 2 is to extend this language with several new
-constructions, and implement several algorithms that work with the code.
+constructions, and implement several algorithms that work with the "code" of
+math function formulas.
 
 Briefly, we are going to process a small mini-language where people can define
-named functions with parameters, all of which compute some kind of mathematical
-expression.
+named mathematical functions with parameters, all of which compute some kind of
+mathematical expression.
 
 As an example, one could write the following program (which calculates
 solutions to a quadratic equation):
@@ -62,8 +63,8 @@ standard output. If parsing of the input fails for whatever reason, print out
 any suitable error message and terminate the program.
 
 At the barest minimum, the formatting must be able to normalize the spaces in
-the formulas, and avoid printing of unnecessary parentheses. For example, this
-function:
+the formulas (or at least remove unnecessary spaces), and avoid printing of
+unnecessary parentheses where possible. For example, this function:
 
 ```
 f(a,b,    c) = (a+((b))+c)*((a   -    b)-     c);
@@ -89,15 +90,15 @@ To simplify testing, you may use [`getArgs :: IO
 to read a filename that was passed to the program via a command line argument,
 and read the input from the given file.
 
-Your solution must define a suitable datatype or (or at least type aliases) for
+Your solution must define a suitable datatype (or at least type aliases) for
 internal representation of the program code. You must use some
 parser-combinator library to implement the parsing; preferably this would be
 [megaparsec](https://hackage.haskell.org/package/megaparsec-9.7.0/docs/Text-Megaparsec.html),
 but any other library with a similar interface (e.g.,
 [attoparsec](https://hackage.haskell.org/package/attoparsec-0.14.4/docs/Data-Attoparsec-ByteString.html),
-or even your own) is OK.
+`ReadP`, or even your own) is OK.
 
-For a quick start, follow the example in [`parser.hs`](./parser.hs).
+**For a quick start, follow the example in [`parser.hs`](./parser.hs).**
 
 ### Bonus 1: Indenting (optional)
 
@@ -177,7 +178,7 @@ and prints out information about the following issues that occur in the code:
     should not generate an error.
 
 The error messages do not need to be complicated; and the single ("first")
-error reported for each program run should be sufficient.
+error reported for each program run is sufficient.
 
 ### Bonus 3: Finding recursion (optional)
 
