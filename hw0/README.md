@@ -67,9 +67,9 @@ With this in hand, you can write your solution to `Main.hs` and test its functio
 
 When your project works, you can ask Cabal to make you a nice redistributable (and submittable) archive of your project with:
 ```
-cabal sdist
+cabal sdist -o .
 ```
-This makes an archive called `packagename-version.tar.gz` (in case of my project, `kratochvil0-0.1.0.0.tar.gz`). Submit that file as your solution in Moodle. (Or send it to me via mail if you don't have Moodle access.)
+This makes an archive called `packagename-version.tar.gz` in the current directory (in case of my project, it creates `kratochvil0-0.1.0.0.tar.gz`). Submit that file as your solution in Moodle. (Or send it to me via mail if you don't have Moodle access.)
 
 Cabal misconfiguration can, in some cases, cause Cabal to **not** include your source code in the archive. If you're not sure, you can always check that the package builds again from unpacked source, or just manually verify the contents with `tar tzf yourfile.tar.gz`.
 
