@@ -295,4 +295,4 @@ Render cursors of all connected users in the GUI (in some reasonable way).
 
 **Please make sure to submit a single `.tar.gz` file, as produced by command
 `cabal sdist`. See [the description of the 0th
-homework](hw0/README.md#3-submitting) for details.**
+homework](../hw0/README.md#3-submitting) for details.**
