@@ -290,3 +290,9 @@ Render cursors of all connected users in the GUI (in some reasonable way).
   [`Debug.Trace`](https://hackage.haskell.org/package/base-4.21.0.0/docs/Debug-Trace.html)
   that allows you to print debugging messages even from the functions that can
   not do IO.
+
+## Submission
+
+**Please make sure to submit a single `.tar.gz` file, as produced by command
+`cabal sdist`. See [the description of the 0th
+homework](hw0/README.md#3-submitting) for details.**
